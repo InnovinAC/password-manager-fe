@@ -3,7 +3,7 @@ import {Routes, Route} from "react-router-dom";
 import {initFlowbite} from "flowbite";
 import Home from "./pages/Home.tsx";
 
-initFlowbite()
+initFlowbite();
 
 function App() {
 
