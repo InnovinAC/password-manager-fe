@@ -1,15 +1,16 @@
+import {Link} from "react-router-dom";
+import BlueShadowButton from "../buttons/blue-shadow- button.tsx";
+
 const HeroSection = () => {
     return (
         <>
             <span className="[&>svg]:absolute [&>svg]:-z-10 [&>svg]:m-auto [&>svg]:block [&>svg]:w-full">
     <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" height="680"
          preserveAspectRatio="none" viewBox="0 0 1920 880">
-     {/* Add your SVG content here */}
-
         <g transform="translate(960,440) scale(1,1) translate(-960,-440)">
         <linearGradient id="lg-0.047955344060927496" x1="0" x2="1" y1="0" y2="0">
-          <stop stop-color="hsl(217, 88%, 33.7%)" offset="0"></stop>
-          <stop stop-color="hsl(217, 88%, 75.1%)" offset="1"></stop>
+          <stop stopColor="hsl(217, 88%, 33.7%)" offset="0"></stop>
+          <stop stopColor="hsl(217, 88%, 75.1%)" offset="1"></stop>
         </linearGradient>
         <path d="" fill="url(#lg-0.047955344060927496)" opacity="0.4">
           <animate attributeName="d" dur="33.333333333333336s" repeatCount="indefinite" keyTimes="0;0.333;0.667;1"
@@ -48,15 +49,17 @@ const HeroSection = () => {
             <div className="w-100 mx-auto mb-32 px-6 sm:max-w-2xl md:max-w-3xl md:px-12 lg:max-w-5xl xl:max-w-7xl xl:px-32">
                 <div className="text-center">
                     <div
-                        className="block rounded-lg opacity-95 bg-[hsla(0,0%,15%,0.8)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,15%,0.8)] dark:shadow-black/20 md:py-16 md:px-12"
+                        className="block  flex-wrap rounded-lg opacity-95 bg-[hsla(0,0%,15%,0.8)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,15%,0.8)] dark:shadow-black/20 md:py-16 md:px-12"
                         style={{marginTop: '180px', backdropFilter: 'saturate(200%) blur(25px)'}}>
                         <h1 className="mt-6 text-white mb-16 text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl">
                             The best password manager <br/><span className="text-blue-600">you will ever find</span>
                         </h1>
-                        <a className="mb-2 inline-block rounded bg-blue-700 px-12 pt-4 pb-3.5 text-sm font-medium uppercase leading-normal text-white hover:shadow-[0_4px_1px_-1px_blue] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] md:mr-2 md:mb-0"
-                           data-te-ripple-init data-te-ripple-color="light" href="#!" role="button">Get started</a>
-                        <a className="inline-block rounded px-12 pt-4 pb-3.5 text-sm font-medium uppercase leading-normal text-white transition duration-150 ease-in-out hover:bg-neutral-500 hover:bg-opacity-10 hover:text-primary-600 focus:outline-none focus:ring-0 active:text-primary-700 dark:hover:bg-neutral-700 dark:hover:bg-opacity-40"
-                           data-te-ripple-init data-te-ripple-color="light" href="#!" role="button">Learn more</a>
+                        <div className={'space-x-3 space-y-3'}>
+                            <BlueShadowButton text={'Get Started'} link={'register'}/>
+                            <BlueShadowButton text={'Login'} link={'login'}/>
+                        </div>
+
+
                     </div>
                 </div>
             </div>

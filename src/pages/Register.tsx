@@ -4,18 +4,18 @@ import usePageTitle from "../hooks/usePageTitle.tsx";
 import Footer from "../components/footer";
 const {VITE_ENV_SITE_NAME} = import.meta.env
 
-const LoginPage = () => {
+const RegisterPage = () => {
     const {setPageTitle} = usePageTitle();
-    setPageTitle(`Login Page - ${VITE_ENV_SITE_NAME}`)
+    setPageTitle(`Registration Page - ${VITE_ENV_SITE_NAME}`)
 
     return (
         <>
             <Navbar/>
-            <Authentication heading={'Login to your account'} type={'Login'}/>
+            <Authentication heading={'Register an account'} type={'Sign Up'}/>
             <Footer/>
         </>
 
     )
 }
 
-export default LoginPage
+export default RegisterPage
