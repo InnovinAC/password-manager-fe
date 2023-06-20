@@ -5,7 +5,7 @@ import Img from '../../assets/avatar.jpeg'
 
 const CategorySlider = () => {
     return (
-        <div className={'my-4'}>
+        <div className={'my-3'}>
             <h2 className={'font-bold text-lg mb-3'}>Categories</h2>
             <div className={'flex space-x-5 flex-row rounded-full overflow-x-scroll'}>
                 <div
@@ -47,7 +47,7 @@ const CategorySlider = () => {
             </div>
 
             <h2 className={'font-bold text-lg my-3'}>Recently Added</h2>
-            <div className={'flex flex-col space-y-3 overflow-y-scroll'}>
+            <div className={'flex mb-32 flex-col space-y-3 overflow-y-scroll'}>
                 <div className={'flex h-20 bg-blue-200 rounded-xl px-3 py-2 justify-between mx-4 flex-row'}>
                     <div className={'flex justify-around space-x-3 flex-row'}>
                         <img className={'my-auto rounded-2xl w-2/3 h-2/3'} src={Img} />
