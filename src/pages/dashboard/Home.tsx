@@ -4,7 +4,7 @@ import TopBanner from "../../components/top-banner";
 
 const Homepage = () => {
     return (
-        <div className={'mx-4'}>
+        <div className={'sm:mx-8 my-auto mx-4 md:mx-32 lg:mx-60 xl:mx-80'}>
             <DashboardNavbar/>
             <DashboardFooter/>
             <TopBanner/>
