@@ -1,5 +1,5 @@
 import {BsBell, BsSearch} from "react-icons/bs";
-import {MdNotificationsNone} from "react-icons/md";
+import Img from '../../assets/avatar.jpeg'
 
 const DashboardNavbar = () => {
     return (
@@ -7,8 +7,8 @@ const DashboardNavbar = () => {
 
             <div className={'flex justify-between flex-row'}>
                 <div className={'flex'}>
-                    <img className={'w-8 rounded-full mr-2 overflow-hidden'}
-                         src={"https://www.jea.com/cdn/images/avatar/avatar-alt.svg"}/>
+                    <img className={'w-12 h-12 rounded-full mr-3 overflow-hidden'}
+                         src={Img}/>
                     <div className={"flex space-y-0 flex-col"}>
                         <span>Welcome Back</span>
                         <span className={"font-bold"}>Innovin</span>
